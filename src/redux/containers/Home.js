@@ -1,6 +1,6 @@
 import React from 'react';
 import { compose, lifecycle } from 'recompose';
-import PostsHeaderComponent from '../../components/PostsHeaderComponent';
+import PostHeaderComponent from '../../components/PostHeaderComponent';
 
 import { connect } from 'react-redux';
 
@@ -44,4 +44,4 @@ const onDidMount = lifecycle({
   }
 });
 
-export default compose(connectToStore, onDidMount)(PostsHeaderComponent);
+export default compose(connectToStore, onDidMount)(PostHeaderComponent);
