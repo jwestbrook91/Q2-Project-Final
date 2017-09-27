@@ -7,12 +7,12 @@ class Comment extends Component {
     this.refs.child.style.display = 'none';
   };
 
-  getComments = comment => {
+  getComments = (comment, authorId) => {
     return (
       <div key={comment.id} className="comment">
         <div className="news-item_subtext">
-          <Link to={`/author/${author.id}`}>
-            {comment.by}
+          <Link to={`/author/${authorId}`}>
+            {authorId}
           </Link>
         </div>
       </div>

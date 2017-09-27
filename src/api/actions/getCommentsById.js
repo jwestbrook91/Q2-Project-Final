@@ -1,4 +1,4 @@
-import recordToComment from './utils/recordToComment';
+import recordToComment from './../utils/recordToComment';
 
 export default function getCommentsById(id) {
   return fetch(`https://api.airtable.com/v0/appUe73zYzkST3zzm/Comments`, {

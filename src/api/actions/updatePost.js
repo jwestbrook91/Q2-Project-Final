@@ -1,4 +1,4 @@
-import recordToNote from './utils/recordToPost';
+import recordToNote from './../utils/recordToPost';
 
 export default function updatePost(id, changes) {
   return fetch(`https://api.airtable.com/v0/appUe73zYzkST3zzm/Posts/${id}`, {

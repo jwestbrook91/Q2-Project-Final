@@ -1,4 +1,4 @@
-import recordToPost from './utils/recordToPost';
+import recordToPost from './../utils/recordToPost';
 
 export default function createPost(newPost) {
   return fetch(`https://api.airtable.com/v0/appUe73zYzkST3zzm/Posts`, {

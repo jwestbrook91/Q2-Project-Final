@@ -15,7 +15,7 @@ import createPostProcess from '../thunks/createPostProcess';
 
 function mapDispatchToProps(dispatch, ownProps) {
   return {
-    onSubmit: ({}) =>
+    onSubmit: ({ title, description, author, count }) =>
       dispatch(
         createPostProcess({
           title,

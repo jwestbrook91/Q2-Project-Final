@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router';
-import Modal from 'react-modal';
 import PostList from './PostList';
 
 const PostHeaderComponent = ({ updateView, items }) => {
@@ -18,9 +17,6 @@ const PostHeaderComponent = ({ updateView, items }) => {
         <button className="btn">Submit a New Post</button>
       </div>
       <PostList items />
-      <Modal isOpen={false}>
-        <div>fooooooo</div>
-      </Modal>
     </div>
   );
 };

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import User from '../../components/User';
-import { getCommentsById } from '../../api/actions/getCommentsById';
+import Author from '../../components/Author';
+import getCommentsById from '../../api/actions/getCommentsById';
+import getPostsProcess from './../thunks/getPostsProcess';
 
 class AuthorContainer extends Component {
   componentDidMount() {
@@ -21,9 +22,9 @@ class AuthorContainer extends Component {
 
 function mapDispatchToProps(dispatch) {
   return {
-    getUser: id => {
+    getAuthor: id => {
       if (typeof id === 'string') {
-        dispatch(requestUser(id));
+        dispatch(getPostsProcess(id));
       }
     }
   };
